@@ -1,5 +1,5 @@
-require_relative 'livro'
-require_relative 'biblioteca' 
+require_relative 'lib/livro'
+require_relative 'lib/biblioteca' 
 
 biblioteca = Biblioteca.new
 
@@ -10,5 +10,6 @@ biblioteca.adiciona teste
 biblioteca.adiciona teste2
 
 biblioteca.livros.each do |livro|
-	puts livro.to_s
+	p livro.categoria
+	p livro.valor
 end
